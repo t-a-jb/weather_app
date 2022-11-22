@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    height: 100%;
+}
+
+*, 
+*::before, 
+*::after {
+box-sizing: inherit;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    /* border: solid 1px red; */
+}
+
+.body {
+    
+    background-color: rgba(211, 211, 211, 0.5);
+    color: rgba(0, 0, 0, 1);
+    /* background-image: url('./images/bg.jpeg');
+    background-blend-mode: multiply; */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    /* min-width: 325px; */
+}
+
+#title {
+    background-color: rgba(0, 0, 153, 1);
+    color: rgba(255, 255, 255, 1);
+    /* border: solid 2px magenta; */
+
+    text-align: center;
+
+    padding: 1.5rem;
+    margin: 0;
+}
+
+
+
+#output-temp {
+    /* background-color: aqua; */
+    /* border: solid 2px green; */
+
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 2;
+    justify-content: center;
+    align-items: center; 
+
+    padding: 1rem;
+    margin: 2rem 0 0;
+}
+
+#output-icon {
+    background-color: rgba(211, 211, 211, 0.6);
+    color: rgba(0, 0, 0, 1);
+
+    /* border: solid 2px magenta; */
+    border-radius: 10%;
+
+    width: 300px;
+    height: auto;
+
+    padding: 1rem;
+    margin: 2rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 200px;
+    height: auto;
+}
+
+
+
+
+
+#output-deg {
+    background-color: rgba(211, 211, 211, 0.6);
+    color: rgba(0, 0, 0, 1);
+
+    /* border: solid 2px black; */
+    border-radius: 10%;
+
+    font-size: 2rem;
+
+
+
+    width: 400px;
+    height: 236px;
+
+    padding: 1rem;
+    margin: 2rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inner-temp {
+    /* background-color: rgba(195, 195, 195, 0.9); */
+    /* border: solid 2px khaki; */
+    /* border-radius: 10%; */
+    
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.celcius {
+    font-size: 4rem;
+}
+
+
+
+
+
+
+
+
+
+#output-sky {
+    background-color: rgba(195, 195, 195, 0.9);
+    /* border: solid 2px royalblue; */
+    
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.inner-sky {
+    /* background-color: magenta; */
+    /* border: solid 2px khaki; */
+    
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+#output-air {
+    /* background-color: rgba(211, 211, 211, 0.5); */
+    /* border: solid 2px hotpink; */
+    
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inner-air {
+    /* background-color: magenta;
+    border: solid 2px khaki; */
+    
+    font-size: 1.5rem;
+
+    align-items: center;
+    text-align: center;
+
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.air-qual-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.air-qual-note {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+
+.air-qual-note.good {
+    background-color: green;
+    color: white;
+}
+
+.air-qual-note.moderate {
+    background-color: yellow;
+}
+
+.air-qual-note.unhealthy-sensitive {
+    background-color: orange;
+    color: white;
+}
+
+.air-qual-note.unhealthy {
+    background-color: red;
+    color: white;
+}
+
+.air-qual-note.very-unhealthy {
+    background-color: purple;
+    color: white;
+}
+
+.air-qual-note.hazardous {
+    background-color: darkred;
+    color: white;
+}
